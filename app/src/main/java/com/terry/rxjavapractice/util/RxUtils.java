@@ -1,6 +1,9 @@
 package com.terry.rxjavapractice.util;
 
+import android.os.StrictMode;
+
 import io.reactivex.ObservableTransformer;
+import io.reactivex.android.BuildConfig;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
 
@@ -18,4 +21,10 @@ public class RxUtils {
         return (ObservableTransformer<T, T>) schedulersTransformer;
     }
 
+    public static void activeStrictMode() {
+        if (BuildConfig.DEBUG) {
+            StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder().detectAll().penaltyLog().build());
+            StrictMode.setVmPolicy(new StrictMode.VmPolicy.Builder().detectAll().penaltyLog().build());
+        }
+    }
 }
