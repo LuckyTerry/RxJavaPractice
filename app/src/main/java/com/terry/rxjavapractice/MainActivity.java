@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    @OnClick({R.id.button, R.id.button2, R.id.button3, R.id.button4, R.id.button5, R.id.button6, R.id.button7, R.id.button8})
+    @OnClick({R.id.button, R.id.button2, R.id.button3, R.id.button4, R.id.button5, R.id.button6, R.id.button7, R.id.btn_join})
     public void onViewClicked(View view) {
         Intent intent = null;
         switch (view.getId()) {
@@ -26,18 +26,25 @@ public class MainActivity extends AppCompatActivity {
                 intent = new Intent(MainActivity.this, IntervalActivity.class);
                 break;
             case R.id.button2:
+                intent = new Intent(MainActivity.this, LambdaActivity.class);
                 break;
             case R.id.button3:
+                intent = new Intent(MainActivity.this, ScanActivity.class);
                 break;
             case R.id.button4:
+                intent = new Intent(MainActivity.this, GroupByActivity.class);
                 break;
             case R.id.button5:
+                intent = new Intent(MainActivity.this, BufferActivity.class);
                 break;
             case R.id.button6:
+                intent = new Intent(MainActivity.this, WindowActivity.class);
                 break;
             case R.id.button7:
+                intent = new Intent(MainActivity.this, CastActivity.class);
                 break;
-            case R.id.button8:
+            case R.id.btn_join:
+                intent = new Intent(MainActivity.this, JoinActivity.class);
                 break;
         }
         if (intent != null) {

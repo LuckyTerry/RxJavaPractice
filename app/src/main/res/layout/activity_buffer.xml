@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="btn_start"/>
+
+    <TextView
+        android:id="@+id/tv_buffer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        tools:text="TextView"/>
+
+    <Button
+        android:id="@+id/btn_start_with_skip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="btn_start_with_skip"/>
+
+    <TextView
+        android:id="@+id/tv_buffer_with_skip"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        tools:text="TextView"/>
+
+    <Button
+        android:id="@+id/btn_start_with_skip_and_timespan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="btn_start_with_skip_and_timespan"/>
+
+    <TextView
+        android:id="@+id/tv_bufferwith_skip_and_timespan"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        tools:text="TextView"/>
+</LinearLayout>
